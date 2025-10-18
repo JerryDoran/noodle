@@ -1,0 +1,2 @@
+Nativewind - tailwind css to style the app
+ - pnpx expo start --clear
