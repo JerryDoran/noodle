@@ -10,6 +10,7 @@ export default function CustomInput({
   label,
   secureTextEntry = false,
   keyboardType = 'default',
+  type,
 }: CustomInputProps) {
   const [isFocused, setIsFocused] = useState(false);
 

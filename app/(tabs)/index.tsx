@@ -12,10 +12,13 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import CartButton from '@/components/cart-button';
+import useAuthStore from '@/store/auth.store';
 import arrowDown from '../../assets/icons/arrow-down.png';
 import arrowRight from '../../assets/icons/arrow-right.png';
 
 export default function IndexPage() {
+  const { user } = useAuthStore();
+  console.log('USER:', JSON.stringify(user, null, 2));
   return (
     <SafeAreaView className='flex-1 bg-white'>
       <FlatList
