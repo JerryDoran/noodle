@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { CreateUserParams, SignInParams } from '@/type';
 import {
   Account,
@@ -85,3 +86,12 @@ export async function getCurrentUser() {
     throw new Error(error as string);
   }
 }
+=======
+export const appwriteConfig = {
+  endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,
+  platform: 'com.maestro.noodle',
+  projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
+  databaseId: '68fe160e0010b37e022b',
+  userCollectionId: 'user',
+};
+>>>>>>> 5e27afa5add862ebb3f8094c4a29bb33b746f638

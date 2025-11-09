@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 import { images } from '@/constants';
 import useAuthStore from '@/store/auth.store';
 import { Redirect, Slot } from 'expo-router';
+=======
+import CustomButton from '@/components/custom-button';
+import CustomInput from '@/components/custom-input';
+import { images } from '@/constants';
+import { Slot } from 'expo-router';
+>>>>>>> 5e27afa5add862ebb3f8094c4a29bb33b746f638
 import {
   Dimensions,
   Image,
@@ -37,9 +44,25 @@ export default function AuthLayout() {
             className='absolute z-10 self-center size-48 -bottom-16'
           />
         </View>
+<<<<<<< HEAD
         <View className='mt-10 px-6 space-y-6'></View>
         <Slot />
       </ScrollView>
+=======
+        <View className='mt-10 px-6 space-y-6'>
+          <CustomInput
+            placeholder='Enter your email'
+            value={''}
+            onChangeText={() => {}}
+            label='Email'
+            keyboardType='email-address'
+          />
+          <CustomButton />
+        </View>
+      </ScrollView>
+
+      <Slot />
+>>>>>>> 5e27afa5add862ebb3f8094c4a29bb33b746f638
     </KeyboardAvoidingView>
   );
 }

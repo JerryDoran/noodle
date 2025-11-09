@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { CustomButtonProps } from '@/type';
 import cn from 'clsx';
 import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
@@ -23,5 +24,13 @@ export default function CustomButton({
         )}
       </View>
     </TouchableOpacity>
+=======
+import { Text, View } from 'react-native';
+export default function CustomButton() {
+  return (
+    <View>
+      <Text>CustomButton</Text>
+    </View>
+>>>>>>> 5e27afa5add862ebb3f8094c4a29bb33b746f638
   );
 }
